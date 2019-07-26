@@ -1,24 +1,17 @@
-# README
+## netshop-service
+## 初回テンプレート
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+コントローラ
+rails g controller page index
+rails g controller user/dashboard index
+rails g controller user/item index show create edit delete
+rails g controller user/shop index show create update delete
+rails g controller payment index show create update delete
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+モデル
+rails g model user
+rails g model shop
+rails g model item
+rails g model item_sale
+```
