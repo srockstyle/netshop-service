@@ -6,7 +6,7 @@ class CreateShops < ActiveRecord::Migration[6.0]
       t.text :description
       t.boolean :open
       t.boolean :delete
-
+      t.string :slug
       t.timestamps
     end
   end

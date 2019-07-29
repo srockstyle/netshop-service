@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :owners
   get 'payment/index'
   get 'payment/show'
   get 'payment/create'
@@ -21,6 +22,6 @@ Rails.application.routes.draw do
   namespace :user do
     get 'dashboard/index'
   end
-  get 'page/index'
+  root to: 'page#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
