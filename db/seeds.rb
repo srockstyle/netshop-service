@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Owner.create(
+#   name: "srock_owner",
+#   description: "いろいろやってるクマ",
+#   delete: false
+# )
+# Shop.create(
+#   owner_id: 1,
+#   name: "srockshops",
+#   description: "いろいろやってるクマ",
+#   delete: false
+# )
