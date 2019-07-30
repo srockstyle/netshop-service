@@ -3,7 +3,7 @@ class CreateOwners < ActiveRecord::Migration[6.0]
     create_table :owners do |t|
       t.string :name
       t.text :description
-      t.boolean :delete
+      # t.boolean :delete
 
       t.timestamps
     end
