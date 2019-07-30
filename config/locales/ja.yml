@@ -1,7 +1,16 @@
 # https://github.com/svenfuchs/rails-i18n
----
 ja:
   activerecord:
+    attributes:
+      owner:
+        name: "名前"
+        email: "メールアドレス"
+        password: "パスワード"
+        password_confirmation: "同じパスワード"
+        remember_me: "次回から自動的にログイン"
+    words:
+      back: "戻る"
+
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'

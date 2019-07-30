@@ -13,7 +13,7 @@ h2
       em
         | (
         = @minimum_password_length
-        |  characters minimum)
+        |  #{I18n.t('devise.password_minimum')})
     br
     = f.password_field :password, autocomplete: "new-password"
   .field
@@ -21,5 +21,5 @@ h2
     br
     = f.password_field :password_confirmation, autocomplete: "new-password"
   .actions
-    = f.submit "Sign up"
+    = f.submit "#{I18n.t('devise.registrations.sign_up')}"
 = render "devise/shared/links"

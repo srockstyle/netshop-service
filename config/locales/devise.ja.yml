@@ -1,5 +1,6 @@
 ja:
   devise:
+    password_minimum: '文字以上'
     confirmations:
       confirmed: 'アカウントを登録しました。'
       send_instructions: 'アカウントの有効化について数分以内にメールでご連絡します。'
@@ -32,7 +33,9 @@ ja:
       send_paranoid_instructions: "あなたのメールアドレスが登録済みの場合、パスワード再設定用のメールが数分以内に送信されます。"
       updated: 'パスワードが正しく変更されました。'
       updated_not_active: 'パスワードが正しく変更されました。'
+      forget_and_reset: 'パスワードをお忘れの方は'
     registrations:
+      sign_up: 'アカウント登録'
       destroyed: 'アカウントを削除しました。またのご利用をお待ちしております。'
       signed_up: 'アカウント登録が完了しました。'
       signed_up_but_inactive: 'ログインするためには、アカウントを有効化してください。'
@@ -41,6 +44,7 @@ ja:
       update_needs_confirmation: 'アカウント情報を変更しました。変更されたメールアドレスの本人確認のため、本人確認用メールより確認処理をおこなってください。'
       updated: 'アカウント情報を変更しました。'
     sessions:
+      sign_in: 'ログイン'
       signed_in: 'ログインしました。'
       signed_out: 'ログアウトしました。'
       already_signed_out: '既にログアウト済みです。'
