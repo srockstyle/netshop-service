@@ -1,6 +1,6 @@
 h1
   | Page#index
 p
-  = link_to "オーナー登録", new_owner_registration_url
+  = link_to "#{I18n.t('devise.registrations.sign_up')}", new_owner_registration_url
 p
-  = link_to "ログイン", new_owner_session_url
+  = link_to "#{I18n.t('devise.sessions.sign_in')}", new_owner_session_url
