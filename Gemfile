@@ -29,6 +29,12 @@ gem 'devise-i18n-views'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+## バルクインサート
+gem 'activerecord-import'
+##  Webサーバ
+gem 'rhebok'
+
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -37,6 +43,12 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
   gem 'factory_bot_rails'
+
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '>= 2.15'
+  gem 'selenium-webdriver'
+  # Easy installation and use of web drivers to run system tests with browsers
+  gem 'webdrivers'
 end
 
 group :development do
@@ -46,14 +58,31 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-end
-
-group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
-  # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
+  ## 静的開発チェック
+  gem 'brakeman'
+  ## gemのセキュリティチェック
+  gem 'bundler-audit'
+  ## パフォーマンスをブラウザに表示
+  gem 'rack-mini-profiler'
+  ## エラー時に表示されるデバッグ画面
+  gem 'better_errors', '2.2.0'
+  # gem 'better_errors'
+  gem 'binding_of_caller'
+  ## n +1問題解決
+  gem 'bullet'
+  ## ミニマムならrubyフォーマッタ
+  gem 'rufo'
+  ## モデルなどスキーマをコメントではってくれる
+  gem 'annotate_models'
+  gem 'annotate'
+  ## 開発環境であることを表示
+  # https://github.com/dtaniwaki/rack-dev-mark
+  # gem 'rack-dev-mark'
+  ## TODO テストの時にシェルの試験
+  # gem 'rspec-shell_command'
+  ## deploy
+  # TODO デプロイ時にdelayed_jobの再起動をかけること
+  # gem 'capistrano3-delayed-job'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -63,6 +63,6 @@ Rails.application.configure do
 
   ## 日本語対応
   # config.i18n.fallbacks = [{de: :ja}]
-  config.i18n.fallbacks = [I18n.default_locale, {:ja}]
+  config.i18n.default_locale = :ja
 
 end
