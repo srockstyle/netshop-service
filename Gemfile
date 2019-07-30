@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'slim-rails', '3.1.3'
 
 gem 'devise'
+gem 'devise-i18n-views'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
