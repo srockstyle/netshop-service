@@ -22,6 +22,6 @@ Rails.application.routes.draw do
   namespace :user do
     get 'dashboard/index'
   end
+  get 'logout',to: 'page#owner_after_logout'
   root to: 'page#index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

@@ -9,20 +9,19 @@ class ApplicationController < ActionController::Base
     @user = User.find_by(id: params[:id])
   end
 
-  # protected
-
-  # ここのコメントアウトを外してリダイレクト先を指定
-  # ルートパス名でも良い
-  # The path used after sign up.
+  # ユーザ登録したら移動するパス
   def after_sign_up_path_for(resource)
-    "/user/#{current_user.id}"
+    user_dashboard_index
   end
 
-
-
-  # このアクションを追加
+  # ログインしたら移動するパス
   def after_sign_in_path_for(resource)
-    "/user/#{current_user.id}"
+    user_dashboard_index
+  end
+
+  # ログアウトしたら移動するパス
+  def after_sign_out_path_for(resource)
+    root
   end
 
   protected
