@@ -45,6 +45,7 @@ ja:
       updated: 'アカウント情報を変更しました。'
     sessions:
       sign_in: 'ログイン'
+      sign_out: 'ログアウト'
       signed_in: 'ログインしました。'
       signed_out: 'ログアウトしました。'
       already_signed_out: '既にログアウト済みです。'

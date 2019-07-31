@@ -11,17 +11,17 @@ class ApplicationController < ActionController::Base
 
   # ユーザ登録したら移動するパス
   def after_sign_up_path_for(resource)
-    user_dashboard_index
+    user_dashboard_url
   end
 
   # ログインしたら移動するパス
   def after_sign_in_path_for(resource)
-    user_dashboard_index
+    user_dashboard_url
   end
 
   # ログアウトしたら移動するパス
   def after_sign_out_path_for(resource)
-    root
+    root_url
   end
 
   protected
